@@ -136,7 +136,7 @@ namespace UserLogin
         {
             foreach (User user in UserData.testUser)
             {
-                Console.WriteLine("username = {0}; password = {1}; fakNum = {2}; Role = {3}; Created on = {4}; Valid Through = {5}",
+                Console.WriteLine("username = {0}; password = {1}; fakNum = {2}; Role = {3}; Created on = {4}; Valid Through = {5}; Last Login = {6}",
                 user.username, user.password, user.fakNum, user.role, user.created, user.validThrough);
             }
         }

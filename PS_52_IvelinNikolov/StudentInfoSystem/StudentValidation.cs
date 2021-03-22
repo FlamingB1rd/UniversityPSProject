@@ -7,7 +7,7 @@ namespace StudentInfoSystem
 {
     class StudentValidation
     {
-        private static Student GetStudentDataByUser(User user)
+        public static Student GetStudentDataByUser(User user)
         {
             foreach (Student student in StudentData.testStudent)
             {
@@ -17,6 +17,19 @@ namespace StudentInfoSystem
                 }
             }
             Console.WriteLine("No student found with this facaulty number!");
+            return null;
+        }
+
+        public static User GetUserDataByStudent(Student student)
+        {
+            foreach (User user in UserData.testUser)
+            {
+                if(student.facaultyNumber.Equals(user.fakNum))
+                {
+                    return user;
+                }
+            }
+            Console.WriteLine("No user found with this facaulty number!");
             return null;
         }
     }

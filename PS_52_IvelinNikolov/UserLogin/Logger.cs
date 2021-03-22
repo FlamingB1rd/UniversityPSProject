@@ -27,6 +27,7 @@ namespace UserLogin
             }
         }
 
+
         public static IEnumerable<string> printLogActivity()
         {
             StreamReader sr = new StreamReader("test.txt");

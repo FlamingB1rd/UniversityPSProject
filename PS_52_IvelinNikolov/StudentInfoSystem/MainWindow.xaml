@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <GroupBox x:Name="gbPersonalData" Header="Лични данни" Margin="24,0,20,263"/>
+        <GroupBox x:Name="gbPersonalData" Header="Лични данни" Margin="24,0,20,263">
+            <TextBox x:Name="txtLastLogin" HorizontalAlignment="Left" Margin="537,0,0,0" TextWrapping="Wrap" Width="153"/>
+        </GroupBox>
         <GroupBox x:Name="gbStudentInfo" Header="Студентска информация" Margin="24,189,20,28"/>
         <Label x:Name="lblFirstName" Content="Име:" HorizontalAlignment="Left" Margin="62,26,0,0" VerticalAlignment="Top" Height="31" Width="45"/>
         <Label x:Name="lblMiddleName" Content="Презиме:" HorizontalAlignment="Left" Margin="62,67,0,0" VerticalAlignment="Top" Height="31" Width="77"/>
