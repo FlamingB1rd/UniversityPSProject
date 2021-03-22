@@ -4,19 +4,19 @@ using System.Text;
 
 namespace UserLogin
 {
-    class LoginValidation
+    public class LoginValidation
     {
         public static UserRoles currentUserRole
         { private set; get; }
-        public static String currentUserUsername
+        public static string currentUserUsername
         { private set; get;} 
-        private String username;
-        private String password;
-        private String errorMessage;
+        private string username;
+        private string password;
+        private string errorMessage;
         public delegate void ActionOnError(string errorMsg);
         private ActionOnError actionOnError;
 
-        public LoginValidation(String username, String password, ActionOnError actionOnError)
+        public LoginValidation(string username, string password, ActionOnError actionOnError)
         {
             this.username = username;
             this.password = password;

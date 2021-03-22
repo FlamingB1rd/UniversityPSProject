@@ -1,7 +1,8 @@
 ﻿using System;
 
 namespace UserLogin
-{  enum UserRoles
+{
+    public enum UserRoles
     {
         ANONYMOUS, //0
         ADMIN, //1

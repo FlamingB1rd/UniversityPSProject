@@ -4,15 +4,15 @@ using System.Text;
 
 namespace UserLogin
 {
-    class User
+    public class User
     {
         public DateTime created;
         public DateTime validThrough;
-        public String username
+        public string username
         { get; set; }
-        public String password
+        public string password
         { get; set; }
-        public String fakNum
+        public string fakNum
         { get; set; }
         public int role
         { get; set; }

@@ -1,0 +1,35 @@
+﻿<Window x:Class="StudentInfoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <GroupBox x:Name="gbPersonalData" Header="Лични данни" Margin="24,0,20,263"/>
+        <GroupBox x:Name="gbStudentInfo" Header="Студентска информация" Margin="24,189,20,28"/>
+        <Label x:Name="lblFirstName" Content="Име:" HorizontalAlignment="Left" Margin="62,26,0,0" VerticalAlignment="Top" Height="31" Width="45"/>
+        <Label x:Name="lblMiddleName" Content="Презиме:" HorizontalAlignment="Left" Margin="62,67,0,0" VerticalAlignment="Top" Height="31" Width="77"/>
+        <Label x:Name="lblLastName" Content="Фамилия:" HorizontalAlignment="Left" Margin="62,114,0,0" VerticalAlignment="Top" Height="29" Width="78"/>
+        <Label x:Name="lblFacaulty" Content="Факултет:" HorizontalAlignment="Left" Margin="62,212,0,0" VerticalAlignment="Top" Height="30" Width="77"/>
+        <Label x:Name="lblFacaultyNumber" Content="Фак. номер:" HorizontalAlignment="Left" Margin="62,362,0,0" VerticalAlignment="Top" Height="31" Width="93"/>
+        <Label x:Name="lblStatus" Content="Статус:" HorizontalAlignment="Left" Margin="62,327,0,0" VerticalAlignment="Top" Height="30" Width="60"/>
+        <Label x:Name="lblQualificationDegree" Content="ОКС:" HorizontalAlignment="Left" Margin="62,291,0,0" VerticalAlignment="Top" Height="30" Width="45"/>
+        <Label x:Name="lblMajor" Content="Специалност:" HorizontalAlignment="Left" Margin="62,251,0,0" VerticalAlignment="Top" Height="31" Width="105"/>
+        <Label x:Name="lblCourse" Content="Курс:" HorizontalAlignment="Left" Margin="546,212,0,0" VerticalAlignment="Top" Height="30" Width="48"/>
+        <Label x:Name="lblClass" Content="Поток:" HorizontalAlignment="Left" Margin="546,251,0,0" VerticalAlignment="Top" Height="31" Width="58"/>
+        <Label x:Name="lblGroup" Content="Група:" HorizontalAlignment="Left" Margin="546,291,0,0" VerticalAlignment="Top" Height="30" Width="56"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="187,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <TextBox x:Name="txtMiddleName" HorizontalAlignment="Left" Margin="187,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="187,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <TextBox x:Name="txtFacaulty" HorizontalAlignment="Left" Margin="187,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <TextBox x:Name="txtMajor" HorizontalAlignment="Left" Margin="187,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <TextBox x:Name="txtQualificationDegree" HorizontalAlignment="Left" Margin="187,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="187,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <TextBox x:Name="txtFacaultyNumber" HorizontalAlignment="Left" Margin="187,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <TextBox x:Name="txtCourse" HorizontalAlignment="Left" Margin="614,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="21"/>
+        <TextBox x:Name="txtClass" HorizontalAlignment="Left" Margin="614,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="21"/>
+        <TextBox x:Name="txtGroup" HorizontalAlignment="Left" Margin="614,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="20"/>
+    </Grid>
+</Window>

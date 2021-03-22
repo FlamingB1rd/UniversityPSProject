@@ -7,7 +7,7 @@ using System.Text;
 
 namespace UserLogin
 {
-    static class UserData
+    public static class UserData
     {
         private static List<User> _testUser;
         public static List<User> testUser
@@ -94,7 +94,7 @@ namespace UserLogin
 
         }
 
-        public static void SetUserActiveTo(String username, DateTime newValidThroughDate)
+        public static void SetUserActiveTo(string username, DateTime newValidThroughDate)
         {
             User user = findUserByUsername(username);
 
@@ -102,7 +102,7 @@ namespace UserLogin
             Logger.LogActivity("Activity expiration date of " + username + " changed successfully!");
         }
 
-        public static void AssignUserRole(String username, int newUserRole)
+        public static void AssignUserRole(string username, int newUserRole)
         {
             User user = findUserByUsername(username);
 
