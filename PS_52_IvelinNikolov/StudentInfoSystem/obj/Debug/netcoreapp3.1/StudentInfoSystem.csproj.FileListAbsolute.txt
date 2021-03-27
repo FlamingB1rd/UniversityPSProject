@@ -22,3 +22,4 @@ C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netc
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentInfoSystem.dll
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentInfoSystem.pdb
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentInfoSystem.genruntimeconfig.cache
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\bin\Debug\netcoreapp3.1\Rexi.png

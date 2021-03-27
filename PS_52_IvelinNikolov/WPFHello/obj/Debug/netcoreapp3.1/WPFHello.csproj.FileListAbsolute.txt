@@ -17,3 +17,5 @@ C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\WPFHello\obj\Debug\netcoreapp3.1
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\WPFHello\obj\Debug\netcoreapp3.1\WPFHello.dll
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\WPFHello\obj\Debug\netcoreapp3.1\WPFHello.pdb
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\WPFHello\obj\Debug\netcoreapp3.1\WPFHello.genruntimeconfig.cache
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\WPFHello\obj\Debug\netcoreapp3.1\MyMessage.g.cs
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\WPFHello\obj\Debug\netcoreapp3.1\MyMessage.baml

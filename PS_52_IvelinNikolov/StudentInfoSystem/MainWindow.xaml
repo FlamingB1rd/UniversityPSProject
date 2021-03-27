@@ -7,31 +7,96 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <GroupBox x:Name="gbPersonalData" Header="Лични данни" Margin="24,0,20,263">
-            <TextBox x:Name="txtLastLogin" HorizontalAlignment="Left" Margin="537,0,0,0" TextWrapping="Wrap" Width="153"/>
-        </GroupBox>
-        <GroupBox x:Name="gbStudentInfo" Header="Студентска информация" Margin="24,189,20,28"/>
-        <Label x:Name="lblFirstName" Content="Име:" HorizontalAlignment="Left" Margin="62,26,0,0" VerticalAlignment="Top" Height="31" Width="45"/>
-        <Label x:Name="lblMiddleName" Content="Презиме:" HorizontalAlignment="Left" Margin="62,67,0,0" VerticalAlignment="Top" Height="31" Width="77"/>
-        <Label x:Name="lblLastName" Content="Фамилия:" HorizontalAlignment="Left" Margin="62,114,0,0" VerticalAlignment="Top" Height="29" Width="78"/>
-        <Label x:Name="lblFacaulty" Content="Факултет:" HorizontalAlignment="Left" Margin="62,212,0,0" VerticalAlignment="Top" Height="30" Width="77"/>
-        <Label x:Name="lblFacaultyNumber" Content="Фак. номер:" HorizontalAlignment="Left" Margin="62,362,0,0" VerticalAlignment="Top" Height="31" Width="93"/>
-        <Label x:Name="lblStatus" Content="Статус:" HorizontalAlignment="Left" Margin="62,327,0,0" VerticalAlignment="Top" Height="30" Width="60"/>
-        <Label x:Name="lblQualificationDegree" Content="ОКС:" HorizontalAlignment="Left" Margin="62,291,0,0" VerticalAlignment="Top" Height="30" Width="45"/>
-        <Label x:Name="lblMajor" Content="Специалност:" HorizontalAlignment="Left" Margin="62,251,0,0" VerticalAlignment="Top" Height="31" Width="105"/>
-        <Label x:Name="lblCourse" Content="Курс:" HorizontalAlignment="Left" Margin="546,212,0,0" VerticalAlignment="Top" Height="30" Width="48"/>
-        <Label x:Name="lblClass" Content="Поток:" HorizontalAlignment="Left" Margin="546,251,0,0" VerticalAlignment="Top" Height="31" Width="58"/>
-        <Label x:Name="lblGroup" Content="Група:" HorizontalAlignment="Left" Margin="546,291,0,0" VerticalAlignment="Top" Height="30" Width="56"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="187,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <TextBox x:Name="txtMiddleName" HorizontalAlignment="Left" Margin="187,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="187,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
-        <TextBox x:Name="txtFacaulty" HorizontalAlignment="Left" Margin="187,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <TextBox x:Name="txtMajor" HorizontalAlignment="Left" Margin="187,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <TextBox x:Name="txtQualificationDegree" HorizontalAlignment="Left" Margin="187,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
-        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="187,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <TextBox x:Name="txtFacaultyNumber" HorizontalAlignment="Left" Margin="187,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <TextBox x:Name="txtCourse" HorizontalAlignment="Left" Margin="614,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="21"/>
-        <TextBox x:Name="txtClass" HorizontalAlignment="Left" Margin="614,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="21"/>
-        <TextBox x:Name="txtGroup" HorizontalAlignment="Left" Margin="614,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="20"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <GroupBox Grid.Column="1" Grid.Row="0" x:Name="gbPersonalData"  Header="Лични данни" Margin="10,30,10,70" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!-- Last Login -->
+                    <Label x:Name="lblLastLogin" Grid.Column="2" Grid.Row="0" Content="Last Login:" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+                    <TextBox x:Name="txtLastLogin"  Grid.Column="3" Grid.Row="0" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- First name -->
+                    <Label x:Name="lblFirstName" Grid.Column="0" Grid.Row="0" Content="Име:" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBox x:Name="txtName"  Grid.Column="1" Grid.Row="0" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Middle name -->
+                    <Label x:Name="lblMiddleName" Grid.Column="0" Grid.Row="1" Content="Презиме:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtMiddleName"  Grid.Column="1" Grid.Row="1" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Last name -->
+                    <Label x:Name="lblLastName" Grid.Column="0" Grid.Row="2" Content="Фамилия:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtLastName"  Grid.Column="1" Grid.Row="2" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox Grid.Column="1" Grid.Row="1" x:Name="gbStudentInfo" Header="Студентска информация"  Margin="10,10,10,20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!-- Facaulty -->
+                    <Label x:Name="lblFacaulty"  Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Факултет:" Height="30" Width="77"/>
+                    <TextBox x:Name="txtFacaulty" Grid.Column="1" Grid.Row="0" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Facaulty number -->
+                    <Label x:Name="lblFacaultyNumber"  Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Фак. номер:"  Height="31" Width="93"/>
+                    <TextBox x:Name="txtFacaultyNumber" Grid.Column="1" Grid.Row="1" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Status -->
+                    <Label x:Name="lblStatus"  Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Статус:"  Height="30" Width="60"/>
+                    <TextBox x:Name="txtStatus" Grid.Column="1" Grid.Row="2" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Qualification degree -->
+                    <Label x:Name="lblQualificationDegree"  Grid.Column="0" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Content="ОКС:"  Height="30" Width="45"/>
+                    <TextBox x:Name="txtQualificationDegree" Grid.Column="1" Grid.Row="3" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Major -->
+                    <Label x:Name="lblMajor"  Grid.Column="0" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Специалност:" Height="31" Width="105"/>
+                    <TextBox x:Name="txtMajor" Grid.Column="1" Grid.Row="4" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Course -->
+                    <Label x:Name="lblCourse" Grid.Column="2" Grid.Row="0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Курс:" />
+                    <TextBox x:Name="txtCourse" Grid.Column="3" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Class -->
+                    <Label x:Name="lblClass" Grid.Column="2" Grid.Row="1"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Поток:" />
+                    <TextBox x:Name="txtClass" Grid.Column="3" Grid.Row="1" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Group -->
+                    <Label x:Name="lblGroup" Grid.Column="2" Grid.Row="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Група:"/>
+                    <TextBox x:Name="txtGroup" Grid.Column="3" Grid.Row="2" Margin="0,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Column="0">
+            <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="125,125,125,125" Source="C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\Rexi.png" Visibility="Visible"/>
+        </Grid>
     </Grid>
 </Window>

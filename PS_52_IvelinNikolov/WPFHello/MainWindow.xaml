@@ -22,9 +22,16 @@
         <Label x:Name="lblName2" Content="Another Name" HorizontalAlignment="Left" Margin="191,75,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName2" HorizontalAlignment="Left" Margin="284,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Background="Bisque" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top">Hello, XAML!</TextBlock>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black"> I edited XAML myself! </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black"> I edited XAML myself!</TextBlock>
         <Button HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="100" Click="Button_Click">
             Click me!
         </Button>
+        <ListBox Name="peopleListBox" Margin="458,67,30,248" SelectionChanged="ListBox_SelectionChanged">
+            <ListBoxItem Content="Mike"/>
+            <ListBoxItem Content="Lisa"/>
+            <ListBoxItem Content="John"/>
+            <ListBoxItem Content="Mary"/>
+        </ListBox>
+        <Button x:Name="btnGreeting" Content="Greetings" HorizontalAlignment="Left" Margin="582,197,0,0" VerticalAlignment="Top" Height="20" Width="72" Click="btnGreeting_Click"/>
     </Grid>
 </Window>

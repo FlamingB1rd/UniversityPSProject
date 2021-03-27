@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="devil1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\UserLogin\UserLogin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Rexi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
