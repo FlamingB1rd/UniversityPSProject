@@ -1,0 +1,16 @@
+﻿<Window x:Class="StudentInfoSystem.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="300">
+    <Grid>
+        <Label Height="30" Margin="20,33,20,0" VerticalAlignment="Top" Content="Username:"/>
+        <TextBox x:Name="txtUsername" Height="30" Margin="20,142,20,0" VerticalAlignment="Top" Text="{Binding Username,UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Height="30" Margin="20,112,20,0" VerticalAlignment="Top" Content="Password:"/>
+        <TextBox x:Name="txtPassword" Height="30" Margin="20,63,20,0" VerticalAlignment="Top" Text="{Binding Password,UpdateSourceTrigger=PropertyChanged}"/>
+        <Button x:Name="btnLogin" Content="Login" Height="30" Margin="20,232,20,0" VerticalAlignment="Top" Command="{Binding LoginCommand}" CommandParameter="{Binding .}"/>
+    </Grid>
+</Window>

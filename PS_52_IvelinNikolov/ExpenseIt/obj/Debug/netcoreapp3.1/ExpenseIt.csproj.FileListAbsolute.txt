@@ -21,4 +21,3 @@ C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\ExpenseIt\obj\Debug\netcoreapp3.
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\ExpenseIt\obj\Debug\netcoreapp3.1\ExpenseItHome.baml
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\ExpenseIt\obj\Debug\netcoreapp3.1\ExpenseReport.g.cs
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\ExpenseIt\obj\Debug\netcoreapp3.1\ExpenseReport.baml
-C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\ExpenseIt\bin\Debug\netcoreapp3.1\watermark.png

@@ -97,11 +97,6 @@ namespace WPFHello
             textBlock1.Text = DateTime.Now.ToString();
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void btnGreeting_Click(object sender, RoutedEventArgs e)
         {
             string greetingMsg;

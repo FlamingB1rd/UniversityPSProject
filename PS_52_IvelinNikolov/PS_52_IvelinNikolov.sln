@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentInfoSystem", "Studen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHello", "WPFHello\WPFHello.csproj", "{7C0413E1-37C7-4984-9C7E-5F27BD541213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseIt", "ExpenseIt\ExpenseIt.csproj", "{35C55F04-1418-44CD-9E5F-77EC9B89D5EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseIt", "ExpenseIt\ExpenseIt.csproj", "{35C55F04-1418-44CD-9E5F-77EC9B89D5EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExample", "WpfExample\WpfExample.csproj", "{0ACF3974-4EE7-4376-99A3-77895871DE1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{35C55F04-1418-44CD-9E5F-77EC9B89D5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35C55F04-1418-44CD-9E5F-77EC9B89D5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35C55F04-1418-44CD-9E5F-77EC9B89D5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACF3974-4EE7-4376-99A3-77895871DE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACF3974-4EE7-4376-99A3-77895871DE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACF3974-4EE7-4376-99A3-77895871DE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACF3974-4EE7-4376-99A3-77895871DE1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

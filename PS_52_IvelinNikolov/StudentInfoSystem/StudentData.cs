@@ -21,7 +21,7 @@ namespace StudentInfoSystem
         {
             if (_testStudent == null)
             {
-                _testStudent = new List<Student>(1);
+                _testStudent = new List<Student>(2);
 
                 _testStudent.Add(new Student()
                 {
@@ -37,6 +37,36 @@ namespace StudentInfoSystem
                     _class = "9",
                     group = "52"
                  });
+
+                _testStudent.Add(new Student()
+                {
+                    firstName = "Gongo",
+                    surName = "Kristofer",
+                    lastName = "Andreaz",
+                    facaulty = "FKST",
+                    major = "KSI",
+                    qualificationDegree = "Бакалавър",
+                    status = "заверил",
+                    facaultyNumber = "121218999",
+                    course = "3",
+                    _class = "9",
+                    group = "52"
+                });
+
+                _testStudent.Add(new Student()
+                {
+                    firstName = "Happy",
+                    surName = "Blue",
+                    lastName = "Flighty",
+                    facaulty = "FKST",
+                    major = "KSI",
+                    qualificationDegree = "Бакалавър",
+                    status = "заверил",
+                    facaultyNumber = "121218000",
+                    course = "3",
+                    _class = "9",
+                    group = "52"
+                });
             }
         }
     }

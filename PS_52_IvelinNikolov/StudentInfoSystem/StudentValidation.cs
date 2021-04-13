@@ -11,7 +11,7 @@ namespace StudentInfoSystem
         {
             foreach (Student student in StudentData.testStudent)
             {
-                if (!(user.fakNum.Equals(String.Empty)) || student.facaultyNumber.Equals(user.fakNum))
+                if (!(user.fakNum.Equals(String.Empty)) && student.facaultyNumber.Equals(user.fakNum))
                 {
                     return student;
                 }

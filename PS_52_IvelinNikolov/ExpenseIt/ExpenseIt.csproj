@@ -7,10 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="watermark.jpeg">
+    <None Remove="watermark.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="watermark.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="watermark.png">
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="watermark.jpeg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

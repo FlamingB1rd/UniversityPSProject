@@ -17,17 +17,23 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition />
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!-- People list -->
-        <Label Grid.Column="1">View Expense Report</Label>
+        <Label Grid.Column="1" Content="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=MainCaptionText}"></Label>
         <Border Height="35" Padding="5" Grid.Column="1" Grid.Row="1" Background="#4E87D4" Margin="0,10,10,10">
             <Label VerticalAlignment="Center" Content="Names" FontWeight="Normal" FontStyle="Normal" Foreground="White"/>
         </Border>
-        <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" Margin="0,0,10,0">
-            <ListBoxItem>Mike</ListBoxItem>
+        <ListBox Name="peopleListBox" SelectionChanged="peopleListBox_SelectionChanged_1" Grid.Column="1" Grid.Row="2" Margin="0,0,10,0" ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=ExpenseDataSource}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Path=Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
-        <Button x:Name="btnView" Grid.Column="1" Grid.Row="3" Content="View" Width="125" Height="20" HorizontalAlignment="Right" Margin="0,20,10,20" Click="btnView_Click"/>
+        <Button x:Name="btnView" Grid.Column="1" Grid.Row="3" Content="{Binding ElementName=peopleListBox, Path=SelectedItem.Name}" Width="125" Height="20" HorizontalAlignment="Right" Margin="0,20,10,20" Click="btnView_Click"/>
+        <ListBox Grid.Column="0" Grid.Row="2" ItemsSource="{Binding Path=PersonsChecked}"></ListBox>
+        <Label Grid.Column="0" Grid.Row="3" Content="{Binding Path=LastChecked}" FontWeight="Bold"/>
     </Grid>
 </Window>

@@ -22,4 +22,11 @@ C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netc
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentInfoSystem.dll
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentInfoSystem.pdb
 C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentInfoSystem.genruntimeconfig.cache
-C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\bin\Debug\netcoreapp3.1\Rexi.png
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\ForkWindow.g.cs
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\ForkWindow.baml
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentsList.g.cs
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\UsersList.g.cs
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\StudentsList.baml
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\UsersList.baml
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\Login.g.cs
+C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\StudentInfoSystem\obj\Debug\netcoreapp3.1\Login.baml

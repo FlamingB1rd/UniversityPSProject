@@ -24,6 +24,8 @@ namespace StudentInfoSystem
     {
         public Student checkStudent
         { get; set; }
+
+        public Student currStudent { get; set; }
         public MainWindow()
         {
 
@@ -33,7 +35,7 @@ namespace StudentInfoSystem
             StreamReader sr = new StreamReader("test.txt");
 
             InitializeComponent();
-            checkStudent = StudentData.testStudent[0];
+            /*checkStudent = StudentData.testStudent[0];
             if (checkStudent != null)
             {
                 enableInfoFields();
@@ -56,9 +58,17 @@ namespace StudentInfoSystem
                 }
             }
             else
-            {
+            {       
                 disableInfoFields();
-            }
+            }*/
+        }
+
+        public MainWindow(User user) 
+        {
+            InitializeComponent();
+
+            //currStudent = findLoginStudent(user.fakNum);
+            currStudent = StudentValidation.GetStudentDataByUser(user);
         }
 
         void fillOutInformation()
@@ -121,6 +131,39 @@ namespace StudentInfoSystem
             txtCourse.IsEnabled = true;
             txtClass.IsEnabled = true;
             txtGroup.IsEnabled = true;
+        }
+
+        private Student findLoginStudent(string facultyNumber)
+        {
+            foreach (Student s in StudentData.testStudent)
+            {
+                if (s.facaultyNumber.Equals(facultyNumber))
+                {
+                    return s;
+                }
+            }
+            return null;
+        }
+
+        private void btnFork_Click(object sender, RoutedEventArgs e)
+        {
+            checkStudent = StudentData.testStudent[0];
+            User user = StudentValidation.GetUserDataByStudent(checkStudent);
+            if (user != null && user.role == 1)
+            {
+                ForkWindow forkWindow = new ForkWindow();
+                forkWindow.Height = this.Height;
+                forkWindow.Width = this.Width;
+                forkWindow.Show();
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Нямате адмиски права!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Question);
+                if (result == MessageBoxResult.OK)
+                {
+                    e.Handled = true;
+                }
+            }
         }
     }
 

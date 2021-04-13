@@ -8,7 +8,7 @@
         Title="ExpenseIt - View Expense" Height="450" Width="800">
     <Grid Margin="10,0,10,10">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Iveli\source\repos\PS_52_IvelinNikolov\ExpenseIt\watermark.png"/>
+            <ImageBrush ImageSource="watermark.png"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,9 +19,10 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="4">
+            <Grid Grid.Row="3">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
@@ -38,9 +39,20 @@
                     <Label VerticalAlignment="Center" Content="Amount" FontWeight="Normal" FontStyle="Normal" Foreground="White"/>
                 </Border>
             </Grid>
+            <Grid Grid.Row="5">
+                <DataGrid Grid.ColumnSpan="1" ItemsSource="{Binding Path=Expenses}" AutoGenerateColumns="False" RowHeaderWidth="0" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ExpenseType Sort" Binding="{Binding Path=ExpenseType}"/>
+                        <DataGridTextColumn Header="Amount Sort" Binding="{Binding Path=ExpenseAmount}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
             <Label Grid.Row="0" Foreground="#FF0740A4" FontSize="22">Expense Report For:</Label>
-            <Label Grid.Row="1" FontWeight="Bold" FontSize="14" >Name:</Label>
-            <Label Grid.Row="2" FontWeight="Bold" FontSize="14" >Department:</Label>
+            <Label Grid.Row="1" HorizontalAlignment="Left" FontWeight="Bold" FontSize="14" >Name:</Label>
+            <Label Grid.Row="1" Width="100" HorizontalAlignment="Right" Content="{Binding Path=Name}"></Label>
+            <Label Grid.Row="2" HorizontalAlignment="Left" FontWeight="Bold" FontSize="14" >Department:</Label>
+            <Label Grid.Row="2" Width="100" HorizontalAlignment="Right" Content="{Binding Path=Department}"></Label>
         </Grid>
     </Grid>
 </Window>
